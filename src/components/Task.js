@@ -2,21 +2,16 @@ import React from "react";
 import {
 	CheckIcon,
 	DotsHorizontalIcon,
-	CalendarIcon,
-	XIcon,
 } from "@heroicons/react/outline";
 import { TrashIcon, PencilIcon } from "@heroicons/react/solid";
 
 import { ToggleMenu, ToggleMenuButton } from "./ToggleMenu";
-import { dueDate } from "../helpers/dueDate";
 
 function Task(props) {
 	const taskTextRef = React.useRef();
-	const taskDateRef = React.useRef();
 
 	const [isEditting, setIsEditting] = React.useState(false);
 	const [text, setText] = React.useState(props.task.text);
-	const [taskDate, setTaskDate] = React.useState(null);
 	const [isDone, setIsDone] = React.useState(props.task.isDone);
 
 	function editButtonHandler(e) {

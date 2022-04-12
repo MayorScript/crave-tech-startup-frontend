@@ -1,5 +1,3 @@
-import { HeartIcon } from "@heroicons/react/solid";
-
 function Wrapper(props) {
 	return (
 		<div className="flex flex-col items-center justify-center h-screen p-4 bg-gray-50 dark:text-white dark:bg-gray-900">

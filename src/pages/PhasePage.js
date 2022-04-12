@@ -4,8 +4,6 @@ import {
 	DotsHorizontalIcon,
 	CheckIcon,
 	PlusIcon,
-	CalendarIcon,
-	XIcon,
 } from "@heroicons/react/outline";
 import { TrashIcon, PencilIcon } from "@heroicons/react/solid";
 
@@ -30,16 +28,10 @@ function PhasePage(props) {
 			id: uuid(),
 			text: newTaskTextRef.current.value,
 			phase: props.phase.id,
-			dueDate: null,
 		};
 
-		if (newTaskDateRef.current && newTaskDateRef.current.value)
-			task.dueDate = new Date(newTaskDateRef.current.value);
-
 		if (task.text.trim() !== "") props.onAddTask(task);
-
 		newTaskTextRef.current.value = "";
-		if (newTaskDateRef.current) newTaskDateRef.current.value = "";
 	}
 
 	function editButtonHandler() {

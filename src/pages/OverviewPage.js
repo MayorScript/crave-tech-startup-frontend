@@ -1,12 +1,3 @@
-import {
-	isToday,
-	isTomorrow,
-	isThisWeek,
-	isNextWeek,
-	dueDateCompare,
-} from "../helpers/dueDate";
-import Task from "../components/Task";
-
 function OverviewPage(props) {
 
 	const totalTasksCount = props.tasks.length;
