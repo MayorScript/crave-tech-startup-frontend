@@ -1,4 +1,4 @@
-# This is the front for recording startup progress for Crave Tech
+# Frontend App for documenting startup progress for Crave Tech
 
 ## Project Setup
 ** Install dependencies **
